@@ -28,15 +28,16 @@ You can register using an email address, or your Google account.
 
 After registering, you will receive an email to verify your account. You must accept the Terms and Conditions of use to proceed.
 
-<img id="image" src="../assets/images/pledge.png" style="width: 100%;" >
+<img id="image" src="../assets/images/pledge.png" style="width: 80%;" >
 
-## [Register](https://www.synapse.org/#!RegisterAccount:0)
+<a href="https://www.synapse.org/#!RegisterAccount:0" class="btn btn-primary">Register</a>
+
 
 ### Your first time on the Synapse Dashboard
 
 After accepting the Terms and Conditions of use, you will arrive at the `Projects` tab of your Dashboard. Synapse Projects are online workspaces where researchers can collaborate and organize their work. 
 
-<img id="image" src="../assets/images/projects.png" style="width: 100%;" >
+<img id="image" src="../assets/images/projects.png" style="width: 80%;" >
 
 All of your Projects are stored here, whether you join an existing one or create a new Project. Data, Wikis and Discussions are contained in each Project. We’ll discuss more about [Projects later on in this guide]({{ site.baseurl }}{% link _articles/getting_started.md %}#projects).
 
@@ -60,9 +61,7 @@ Misuse of human health data can result in severe ethical and legal issues. This 
 The Governance team at Sage Bionetworks has created policies that maintain these standards. These policies specify Synapse users’ rights and responsibilities. They include conditions for who can use and access data. They also specify the rights and responsibilities of Sage Bionetworks and of the Synapse Access and Compliance Team (ACT).
 
 [Learn more about Governance]({{ site.baseurl }}{% link _articles/governance.md %}).
-
 [Read the terms and Conditions of Use](https://s3.amazonaws.com/static.synapse.org/governance/SageBionetworksSynapseTermsandConditionsofUse.pdf?v=4).
-
 [Learn more about Synapse Community Standards]({{ site.baseurl }}{% link _articles/governance.md %}#synapse-community-standards). 
 
 
@@ -81,32 +80,24 @@ These are:
 The table below summarizes the user privileges for each level.
  
  {:.markdown-table}
-|                                                          | Anonymous | Registered | Certified | Validated* |
+|                                                          | Anonymous | Registered | Certified | Validated |
 | :--------------------------------------------------------: | :---------: | :----------: | :---------: | :----------: |
 | Browse Public Project Catalogue                          | x         | x          | x         | x          |
 | Browse Public File Catalog                               | x         | x          | x         | x          |
 | Create a Project                                         |           | x          | x         | x          |
 | Add Wiki Content                                         |           | x          | x         | x          |
-| Download Files/Tables*                                   |           | x          | x         | x          |
+| Download Files/Tables                                   |           | x          | x         | x          |
 | Upload Files/Tables                                      |           |            | x         | x          |
 | Add Provenance                                           |           |            | x         | x          |
 | Requesting access to data collected through research app |           |            |           | x          |
 
-[Learn more about User Types]().
+[Learn more about User Types]({{ site.baseurl }}{% link _articles/accounts_certified_users_and_profile_validation.md %}).
 
 **Become a Certified User**
 
 To upload files, you must become a Certified User. This demonstrates that you have awareness of privacy and security issues. You can become certified at any time by taking a short quiz. If you try to upload files without becoming certified, Synapse will prompt you to take the quiz.
 
-After you become a Certified User, you can have your profile Validated.  A Validated profile means that your identity has been verified by the Sage Access and Compliance team. This allows you to access more features and data. Profile validation enables greater transparency within the research community.
-
-Validation steps include:
-* Filling out your profile
-* Connecting your ORCID,
-* Signing the oath, 
-* Providing a recent identity attestation
-
-Learn more about Certified and Validated Accounts.
+Learn more about [Certified]({{ site.baseurl }}{% link _articles/accounts_certified_users_and_profile_validation.md %}#certified-users) and [Validated]({{ site.baseurl }}{% link _articles/accounts_certified_users_and_profile_validation.md %}#validated-profile) users.
 
 ## Projects
 
@@ -119,15 +110,15 @@ Now that you have briefly explored Synapse, it is time to learn a bit more about
 A Project is a workspace that you can use to organize your work and collaborate with others. They act as “containers” and can group related objects such as content and people together.
 
 Using Projects, you can: 
-* Store content such as Data, Code, Results, Figures and Documents
-* Organize your Files and Folders
-* Link and share content with others 
-* Create custom, searchable Annotations
-* Create Tables
-* Have discussions using a Forum
-* Create Project Documentation using Wikis
-* Control Access
-* Release your work publicly
+* Store content such as [Data]({{ site.baseurl }}{% link _articles/files_and_versioning.md %}), Code, Results, [Figures]({{ site.baseurl }}{% link _articles/wikis.md %}) and Documents
+* Organize your [Files and Folders]({{ site.baseurl }}{% link _articles/files_and_versioning.md %})
+* Link and [share content]({{ site.baseurl }}{% link _articles/sharing_settings.md %}) with others 
+* Create [custom, searchable Annotations]({{ site.baseurl }}{% link _articles/annotation_and_query.md %})
+* Create [Tables]({{ site.baseurl }}{% link _articles/tables.md %})
+* Have discussions using a [Forum]({{ site.baseurl }}{% link _articles/discussion.md %})
+* Create Project Documentation using [Wikis]({{ site.baseurl }}{% link _articles/wikis.md %})
+* [Control Access]({{ site.baseurl }}{% link _articles/contribute_and_access_controlled_use_data.md %})
+* Release your work [publicly]({{ site.baseurl }}{% link _articles/managing_teams_for_groups_and_projects.md %})
 
 Any user can create multiple Projects. Each Project can be tailored to a specific workflow, using only the features needed for the Project.
 
@@ -154,12 +145,11 @@ Now that you have a basic understanding of how to start using Synapse you can le
 * I want use Synapse programmatically
 
 ## Advanced Topics
-
-### Practicing Version Control
-All content in Synapse is versioned automatically, with the ability to provide version comments on files, and to link content together with rich provenance relationships. This is particularly useful for groups leveraging Synapse as a component of a data processing pipeline, or citing data for publications, as Synapse allows data contributors to mint DOIs for most content. Learn more versioning content, creating and managing provenance, and how to mint DOIs. 
+### Search
+Leverage Synapse global search to discover data, projects, or even potential collaborators! Search is permission-dependent, meaning it works across all public content and content that you have access to, if logged in. Learn more about Searching. 
 
 ### Custom Metadata
-Synapse provides a number of default metadata fields that automatically annotate content with useful information, but also offers the ability for users to define their own metadata key-value pairs to provide context to their data. These annotations can be viewed and managed at the individual file level, or by creating “views” that show annotations on all content across a larger scope such as a project or folder. Learn more about annotations and views.  
+Synapse provides a number of default metadata fields that automatically annotate content with useful information, but also offers the ability for users to define their own metadata key-value pairs to provide context to their data. These annotations can be viewed and managed at the individual file level, or by creating “views” that show annotations on all content across a larger scope such as a project or folder. Learn more about [Annotations]({{ site.baseurl }}{% link _articles/annotation_and_query.md %}) and [Views]({{ site.baseurl }}{% link _articles/views.md %})].  
 
-### Search
-Leverage Synapse global search to discover data, projects, or even potential collaborators! Search is permission-dependent, meaning it works across all public content and content that you have access to, if logged in.  Learn more about Searching. 
+### Practicing Version Control
+All content in Synapse is versioned automatically, with the ability to provide version comments on files, and to link content together with rich provenance relationships. This is particularly useful for groups leveraging Synapse as a component of a data processing pipeline, or citing data for publications, as Synapse allows data contributors to mint DOIs for most content. Learn more [versioning content]({{ site.baseurl }}{% link _articles/files_and_versioning.md %}#versions-of-files), creating and managing [provenance]({{ site.baseurl }}{% link _articles/provenance.md %}), and [how to mint DOIs]({{ site.baseurl }}{% link _articles/doi.md %}). 
