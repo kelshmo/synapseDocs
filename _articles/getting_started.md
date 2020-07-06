@@ -5,88 +5,161 @@ excerpt: A getting started guide for new users who are interested in learning ab
 order: 1
 ---
 
-This guide is for new users who are interested in learning about Synapse. You will learn fundamental Synapse features by performing some common tasks:
+Welcome to Synapse! We are happy to have you as part of the Synapse Community. 
 
-* Create your own `Project` and add content to Synapse
-* Provide a Project description alongside your materials via the Synapse `Wiki` tools
-* Share your work with other Synapse users, `Teams` of users, or the public
+This guide is for new Synapse users and takes 10 minutes to read.
+
+You will learn:
+ 
+* How to set up your Synapse account.
+* The steps to get started with core Synapse features.
+* This guide will focus on using Synapse on the web. Many researchers also use Synapse with R, Python or Command Line tools. See [Getting Started with Synapse APIs]({{ site.baseurl }}{% link _articles/getting_started_clients.md %}).
 
 ## What is Synapse?
 
+Synapse is a research application developed by [Sage Bionetworks](https://sagebionetworks.org/). Using Synapse, you can find, upload, track, discuss and download datasets and analyses. Synapse supports all kinds of working groups: individuals, small teams, and large consortia.
+For more information, see Introduction to the Sage Platform
 
-Synapse is a collaborative research platform that allows individuals and teams to share, track, and discuss their data and analysis in projects. Synapse is built to work on the web. We provide access to Synapse features and services for programmers through a REST API, [Python client](https://python-docs.synapse.org/build/html/index.html), [command line client](https://python-docs.synapse.org/build/html/CommandLineClient.html), and [R client](https://r-docs.synapse.org/). 
+## Setting Up Synapse
 
-Synapse hosts many [research projects](https://www.synapse.org/#!StandaloneWiki:ResearchCommunities) and [resources](https://www.synapse.org/#!StandaloneWiki:OpenResearchProjects). It also hosts crowdsourced competitions, including [DREAM Challenges](http://dreamchallenges.org/). [Sage Bionetworks](http://www.sagebionetworks.org) provides Synapse services free of charge to the scientific community through generous support from various [funding sources](/articles/faq.html#how-is-synapse-funded).
+### Create your account
+Anyone can browse public projects on Synapse without creating an account. However, to download files and create new content, you will need to make an account.
+You can register using an email address, or your Google account. 
 
-## Create Your Account
+After registering, you will receive an email to verify your account. You must accept the Terms and Conditions of use to proceed.
 
-Anyone can browse public content on the Synapse web site. To download and create content, you will need to [register for an account](https://www.synapse.org/register) using an email address. You will receive an email message for verification to complete the registration process.
+<img id="image" src="../assets/images/pledge.png" style="width: 100%;" >
 
-## Getting Certified
+## [Register](https://www.synapse.org/#!RegisterAccount:0)
 
-Synapse is a data sharing platform approved for storing data from human subjects research. This requires special care and thought. To upload files, Sage Bionetworks requires you demonstrate awareness of privacy and security issues. 
+### Your first time on the Synapse Dashboard
 
-You can complete this by taking a [Certification Quiz](https://www.synapse.org/#!Quiz:Certification).
+After accepting the Terms and Conditions of use, you will arrive at the `Projects` tab of your Dashboard. Synapse Projects are online workspaces where researchers can collaborate and organize their work. 
 
-## Making and Managing Projects in Synapse
+<img id="image" src="../assets/images/projects.png" style="width: 100%;" >
 
-Synapse Projects are online workspaces where researchers can collaborate and organize their work. Synapse supports all kinds of working groups: individuals, small teams, and large consortia.
+All of your Projects are stored here, whether you join an existing one or create a new Project. Data, Wikis and Discussions are contained in each Project. We’ll discuss more about [Projects later on in this guide]({{ site.baseurl }}{% link _articles/getting_started.md %}#projects).
 
-To create a new Project:
+From your dashboard you can also:
+ 
+* View your Profile
+* See Challenges you are registered for
+* See the Teams you are a member of
+* Access your Downloads list 
+* Change your Settings
 
-1. Navigate to the User Menu and click on [**Projects**](https://www.synapse.org/#!Profile:v/projects).
-2. Click the **Create a New Project** button.
-3. Decide on a unique name for your Project and click **Save**.
+You can access all of these tabs from the User Menu as well. 
 
-Your Projects [dashboard](https://www.synapse.org/#!Profile:v/projects) stores your collection of Projects.
+<img id="image" src="../assets/images/user-menu.png" style="width: 50%;" >
 
-Read about [Projects]({{ site.baseurl }}{% link _articles/making_a_project.md %}) in the User Guide.
+## Governance and Access to Data
+Before exploring Synapse, it is important to get an understanding of Governance and Access Privileges. This will ensure that you are able to use Synapse in an ethical and compliant way.
 
-## Synapse IDs
+### Governance
+Misuse of human health data can result in severe ethical and legal issues. This means that all Synapse users must comply with privacy and security standards. 
+The Governance team at Sage Bionetworks has created policies that maintain these standards. These policies specify Synapse users’ rights and responsibilities. They include conditions for who can use and access data. They also specify the rights and responsibilities of Sage Bionetworks and of the Synapse Access and Compliance Team (ACT).
 
-Synapse Projects are assigned a Synapse ID, a globally unique identifier used for reference with the format `syn12345678`. Often abbreviated to "synID", the ID of an object never changes, even if the name does. The Synapse ID is always accessible in the URL and visible on the webpage. 
+[Learn more about Governance]({{ site.baseurl }}{% link _articles/governance.md %}).
 
-## Organizing Content in `Files` and `Folders`
+[Read the terms and Conditions of Use](https://s3.amazonaws.com/static.synapse.org/governance/SageBionetworksSynapseTermsandConditionsofUse.pdf?v=4).
 
-Projects contain Files, which can be organized into Folders. Folders and Files also have their own unique Synapse IDs and can be moved within or between Projects. Uploaded files are stored within Synapse storage.
-
-Use the **Tools Menu** to upload a file: 
-
-1. Navigate to the Files tab.
-2. Use the **Files Tools** menu to select **Add New Folder**.
-3. Decide on a Folder name and click **Save**.
-4. Navigate into your new Folder and use the **Folder Tools** menu to select **Upload or Link to a File**.
-5. Use the **Browse** button to select the file, or drag and drop it to upload, and click **Save**.
-
-To explore other features available for Files and Folders, read about [annotating Files](/articles/annotation_and_query.html), [assigning DOIs](/articles/doi.html), [versioning](/articles/files_and_versioning.html), [`Provenance`](/articles/provenance.html), and [sharing settings](/articles/access_controls.html).
-
-## Adding a Wiki to your Project
-
-A Wiki is a document that can be edited by multiple people on the web. Synapse uses Wikis to provide descriptions of your Project and data.
-
-Wiki pages can be written using text, [Markdown](https://www.markdownguide.org/), or basic HTML. Content can include images, tables, code blocks, LaTeX formatted equations, scholarly references, and references to other things in Synapse.
-
-Use the **Tools** menu to see available Wiki options on Projects, Folders and Files: 
-
-1. Click the **Tools** button and choose **Edit Wiki**.
-	- During editing, you have the option to "Preview" your edits.
-2. Add relevant text, and click **Save**.
-
-See the [Wiki](/articles/wikis.html) User Guide for more information and examples.
-
-## Sharing and Teams
-
-The default setting for new Projects in Synapse is **private**. As a project owner, you choose who to share with, and how. You can find Project sharing settings under the **Project Settings** menu. Permissions or sharing settings at the Project level are automatically inherited by all Files and Folders within the Project. If needed, you can **Create Local Sharing Settings** to make certain Files or Folders have permissions that differ from the parent Project.
-
-Groups of users can form Teams for collaboration. Teams can be used for permissions and for communication. Sharing things with teams instead of individual users can provide simiplicity for administrators.
+[Learn more about Synapse Community Standards]({{ site.baseurl }}{% link _articles/governance.md %}#synapse-community-standards). 
 
 
-For more details, visit the [Sharing Settings](/articles/access_controls.html) and [Teams](/articles/teams.html) User Guide.
+### User Types will Determine Access to Data
 
-## More Guides
+The way in which you will use Synapse, will depend on your own research needs and your Synapse User Type.
 
-Find additional information in our [User Guide](/articles).
+There are four User Types in Synapse. Each User Type has a different level of permission. 
 
-Read about Synapse [governance](/articles/governance.html) and [Terms and Conditions of Use](https://s3.amazonaws.com/static.synapse.org/governance/SageBionetworksSynapseTermsandConditionsofUse.pdf?v=4).
+These are:
+* Anonymous users who do not have a Synapse account 
+* Registered users who have created a Synapse account
+* Certified users who have passed the certification quiz
+* Validated users whose profile has been verified
 
-For information on using Synapse programmatically, see the documentation for the [Python client](https://python-docs.synapse.org/build/html/index.html), [command line client](https://python-docs.synapse.org/build/html/CommandLineClient.html), and [R client](https://r-docs.synapse.org/)
+The table below summarizes the user privileges for each level.
+ 
+ {:.markdown-table}
+|                                                          | Anonymous | Registered | Certified | Validated* |
+| :--------------------------------------------------------: | :---------: | :----------: | :---------: | :----------: |
+| Browse Public Project Catalogue                          | x         | x          | x         | x          |
+| Browse Public File Catalog                               | x         | x          | x         | x          |
+| Create a Project                                         |           | x          | x         | x          |
+| Add Wiki Content                                         |           | x          | x         | x          |
+| Download Files/Tables*                                   |           | x          | x         | x          |
+| Upload Files/Tables                                      |           |            | x         | x          |
+| Add Provenance                                           |           |            | x         | x          |
+| Requesting access to data collected through research app |           |            |           | x          |
+
+[Learn more about User Types]().
+
+**Become a Certified User**
+
+To upload files, you must become a Certified User. This demonstrates that you have awareness of privacy and security issues. You can become certified at any time by taking a short quiz. If you try to upload files without becoming certified, Synapse will prompt you to take the quiz.
+
+After you become a Certified User, you can have your profile Validated.  A Validated profile means that your identity has been verified by the Sage Access and Compliance team. This allows you to access more features and data. Profile validation enables greater transparency within the research community.
+
+Validation steps include:
+* Filling out your profile
+* Connecting your ORCID,
+* Signing the oath, 
+* Providing a recent identity attestation
+
+Learn more about Certified and Validated Accounts.
+
+## Projects
+
+Now that you have briefly explored Synapse, it is time to learn a bit more about Projects.
+
+### What is a Project?
+
+<img id="image" src="../assets/images/project-example.png" style="width: 100%;" >
+
+A Project is a workspace that you can use to organize your work and collaborate with others. They act as “containers” and can group related objects such as content and people together.
+
+Using Projects, you can: 
+* Store content such as Data, Code, Results, Figures and Documents
+* Organize your Files and Folders
+* Link and share content with others 
+* Create custom, searchable Annotations
+* Create Tables
+* Have discussions using a Forum
+* Create Project Documentation using Wikis
+* Control Access
+* Release your work publicly
+
+Any user can create multiple Projects. Each Project can be tailored to a specific workflow, using only the features needed for the Project.
+
+[Learn more about Projects]({{ site.baseurl }}{% link _articles/making_a_project.md %}).
+
+## Synapse ID
+
+On the top left of your Project, you’ll notice a Synapse ID with the format “syn12345678”. Everything that is created in Synapse has a unique Synapse ID. The Synapse ID is often abbreviated to “synID”. The ID of an object never changes, even if the name does. 
+
+<img id="image" src="../assets/images/synid-example.png" style="width: 40%;" >
+
+The synID is always accessible in the URL and visible on the webpage. It is used for reference to any object in Synapse.
+
+## What's Next?
+
+Now that you have a basic understanding of how to start using Synapse you can learn more about how to use the core features with these tutorials below.
+
+* I want to create a new project
+* I want to upload my data and share it
+* I want to download existing data
+* I want to organize files in a project
+* I want to create a New team 
+* I want to download research data from mobile studies
+* I want use Synapse programmatically
+
+## Advanced Topics
+
+### Practicing Version Control
+All content in Synapse is versioned automatically, with the ability to provide version comments on files, and to link content together with rich provenance relationships. This is particularly useful for groups leveraging Synapse as a component of a data processing pipeline, or citing data for publications, as Synapse allows data contributors to mint DOIs for most content. Learn more versioning content, creating and managing provenance, and how to mint DOIs. 
+
+### Custom Metadata
+Synapse provides a number of default metadata fields that automatically annotate content with useful information, but also offers the ability for users to define their own metadata key-value pairs to provide context to their data. These annotations can be viewed and managed at the individual file level, or by creating “views” that show annotations on all content across a larger scope such as a project or folder. Learn more about annotations and views.  
+
+### Search
+Leverage Synapse global search to discover data, projects, or even potential collaborators! Search is permission-dependent, meaning it works across all public content and content that you have access to, if logged in.  Learn more about Searching. 
