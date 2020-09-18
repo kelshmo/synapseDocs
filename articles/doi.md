@@ -22,7 +22,7 @@ category: howto
 }
 </style>
 
-# Overview
+# Overview - change some title here
 
 A Digital Object Identifier (DOI) is a persistent identifier assigned to uniquely identify a digital object. A DOI is defined by a digital location like a URL and a description of the object. This description includes attribution and a creation or publication date. Creating and assigning a new DOI is commonly known as "minting". Minting a DOI for things in Synapse allow you to reference them when used elsewhere, such as in a publication or on an external website.
 
